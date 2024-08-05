@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agape Food Delivery Service - Partner Invite</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- <h1>Agape Food Delivery Service - Partner Invite</h1> -->
+    <form id="partnerInviteForm">
+        <h1>Agape Food Delivery Service - Partner Invite</h1>
+        <label for="restaurantName"></label>
+        <input type="text" id="restaurantName" name="restaurantName" required placeholder="Restaurant name*">
+        <table>
+            <tr>
+                <td>
+                    <label for="pin"></label>
+                    <input type="text" id="pin" name="pin" required placeholder="Pin (Primary Location)*">
+                </td>
+                <td>
+                    <label for="city"></label>
+                    <input type="text" id="city" name="city" required placeholder="City*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="onam"></label>
+                    <input type="text" id="onam" name="onam" required placeholder="Restaurant owner*">
+                </td>
+                <td>
+                    <label for="phno"></label>
+                    <input type="tel" id="phno" name="phno" required placeholder="Phone number*">
+                </td>
+            </tr>
+        </table>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required placeholder="Email*">
+
+        <label for="link"></label>
+        <input type="url" id="link" name="link" placeholder="Website Link/ online listing link<">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="noOfOutlets"></label>
+                    <input type="number" id="noOfOutlets" name="noOfOutlets" required placeholder="Number of outlets*">
+                </td>
+                <td>
+                    <label for="primaryArea"></label>
+                    <input type="text" id="primaryArea" name="primaryArea" required placeholder="Primary Area of outlet*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cost"></label>
+                    <input type="text" id="cost" name="cost" required placeholder="Cost for two*">
+                </td>
+                <td>
+                    <label for="establishment"></label>
+                    <input type = "text" id="establishment" name="establishment" required placeholder="Establishment: Independant/Chain*">
+                </td>
+            </tr>
+        </table>      
+        </input>
+        <div class="cuisine-type">
+            <label>Cuisine type*</label>
+            <label for="indianVeg">
+                <input type="checkbox" id="indianVeg" name="type" value="indianVeg">
+                Indian-veg
+            </label>
+            <label for="indianVegNonVeg">
+                <input type="checkbox" id="indianVegNonVeg" name="type" value="indianVegNonVeg">
+                Indian-veg & Non-veg
+            </label>
+            <label for="chinese">
+                <input type="checkbox" id="chinese" name="type" value="chinese">
+                Chinese
+            </label>
+            <label for="continental">
+                <input type="checkbox" id="continental" name="type" value="continental">
+                Continental
+            </label>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="license">Licence (jpeg/PDF)*</label>
+                    <input type="file" id="license" name="license" accept=".jpeg,.pdf" required>            
+                </td>
+                <td>
+                    <label for="fssai">FSSAI (jpeg/PDF)*</label>
+                    <input type="file" id="fssai" name="fssai" accept=".jpeg,.pdf" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pan">GSTIN/PAN*</label>
+                    <input type="file" id="pan" name="pan" accept=".jpeg,.pdf" required>
+                </td>
+                <td>
+                    <label for="others">Facade/Kitchen/Dining-Packaging/Locality (jpeg)</label>
+                    <input type="file" id="others" name="others" accept=".jpeg">
+                </td>
+            </tr>
+        </table>  
+        
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to terms of services
+        </label>
+
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
